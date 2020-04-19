@@ -1,0 +1,41 @@
+{
+  "include": ["src", "typings", "lambdas/src"],
+  "exclude": ["src/**/*.spec.*"],
+  "extends": "./node_modules/react-redux-typescript-scripts/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["dom", "es2018", "esnext"],
+    "moduleResolution": "node",
+    "jsx": "react-native",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noEmit": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "sourceRoot": ".",
+    "baseUrl": ".",
+    "rootDir": "..",
+    "paths": {
+      "assets/*": ["./src/assets/*"],
+      "components/*": ["./src/components/*"],
+      "config/*": ["./src/config/*"],
+      "containers/*": ["./src/containers/*"],
+      "interfaces/*": ["./src/interfaces/*"],
+      "reduxStore/*": ["./src/redux/*"],
+      "sagas/*": ["./src/redux/sagas/*"],
+      "services/*": ["./src/services/*"],
+      "theme/*": ["./src/theme/*"],
+      "utils/*": ["./src/utils/*"],
+      "types/*": ["./src/types/*"],
+      "constants/*": ["./src/constants/*"],
+      "common/*": ["../common/*"]
+    }
+  },
+
+}
